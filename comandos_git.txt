@@ -1,9 +1,31 @@
+# https://git-scm.com/book/pt-br/v1/Primeiros-passos
+
 $ git config –-global user.name “Your Name”
 $ git config –-global user.email youremail@mailsite.com
 $ cd project
-$ git init
-$ vi README.md
-$ git add .
-$ git commit –m ‘first commit’
-$ git remote set-url origin git@github.com:user/repo.git
-$ git push origin master
+
+# Crie um novo repositório na linha de comando
+# https
+echo "# Linux" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/user/repo.git
+git push -u origin master
+
+# Adicionando um repositório existente a partir da linha de comando
+git remote add origin https://github.com/user/repo.git
+git push -u origin master
+
+# Por ssh
+# Crie um novo repositório na linha de comando
+echo "# Linux" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:user/repo.git
+git push -u origin master
+
+# Adicionando um repositório existente a partir da linha de comando
+git remote add origin git@github.com:user/repo.git
+git push -u origin master
