@@ -1,0 +1,9 @@
+$ git config –-global user.name “Your Name”
+$ git config –-global user.email youremail@mailsite.com
+$ cd project
+$ git init
+$ vi README.md
+$ git add .
+$ git commit –m ‘first commit’
+$ git remote set-url origin git@github.com:user/repo.git
+$ git push origin master
